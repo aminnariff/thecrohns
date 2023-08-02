@@ -1,0 +1,13 @@
+{
+  "resourceName": "s3cfa2712e",
+  "policyUUID": "cfa2712e",
+  "bucketName": "thecrohns018c16753d65490eaf703424c087ef75",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "groupAccess": {}
+}

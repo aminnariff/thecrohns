@@ -1,0 +1,147 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-thecrohns-dev-181636-authRole",
+      "UnauthRoleArn": "arn:aws:iam::122148721104:role/amplify-thecrohns-dev-181636-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::122148721104:role/amplify-thecrohns-dev-181636-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-thecrohns-dev-181636-deployment",
+      "UnauthRoleName": "amplify-thecrohns-dev-181636-unauthRole",
+      "StackName": "amplify-thecrohns-dev-181636",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:122148721104:stack/amplify-thecrohns-dev-181636/ba174f30-06ae-11ee-baac-0ab1254b2372",
+      "AmplifyAppId": "duxkmzum3s11o"
+    }
+  },
+  "analytics": {
+    "thecrohns": {
+      "providerPlugin": "awscloudformation",
+      "service": "Pinpoint",
+      "output": {
+        "appName": "thecrohns-dev",
+        "Region": "ap-southeast-2",
+        "Id": "e34579073dfb44a79c8358a9e8b4597d"
+      },
+      "lastPushTimeStamp": "2023-07-15T18:41:55.302Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-thecrohns-dev-181636-deployment/amplify-cfn-templates/analytics/pinpoint-cloudformation-template.json",
+        "logicalId": "analyticsthecrohns"
+      }
+    }
+  },
+  "api": {
+    "thecrohns": {
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AWS_IAM"
+            }
+          ],
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 30,
+              "description": "api key description"
+            }
+          }
+        },
+        "GraphQLAPIIdOutput": "6qb777w4abbu7muzztlsw5iawu",
+        "GraphQLAPIEndpointOutput": "https://bta5o22fxjdgpbplwxwxr42u2q.appsync-api.ap-southeast-2.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-q4lpx4pt5vbkbj2r6j2uv6mny4"
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync",
+      "lastPushTimeStamp": "2023-07-15T18:41:55.338Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-thecrohns-dev-181636-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apithecrohns"
+      },
+      "lastPushDirHash": "FIVOfrSLJIPgmd5mLN3zoeOXOjU="
+    }
+  },
+  "auth": {
+    "thecrohns91ad5b04": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "output": {
+        "UserPoolId": "ap-southeast-2_LmHsbkpKr",
+        "AppClientIDWeb": "s1en9seat59fnu3q8list0q7s",
+        "AppClientID": "481i875jh84u6qo6vosbbm7eij",
+        "IdentityPoolId": "ap-southeast-2:4b02011e-d13d-4c11-bf8d-86c7cb7fc1cd",
+        "UserPoolArn": "arn:aws:cognito-idp:ap-southeast-2:122148721104:userpool/ap-southeast-2_LmHsbkpKr",
+        "IdentityPoolName": "thecrohns91ad5b04_identitypool_91ad5b04__dev",
+        "UserPoolName": "thecrohns91ad5b04_userpool_91ad5b04"
+      },
+      "lastPushTimeStamp": "2023-07-15T18:41:55.305Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-thecrohns-dev-181636-deployment/amplify-cfn-templates/auth/thecrohns91ad5b04-cloudformation-template.json",
+        "logicalId": "auththecrohns91ad5b04"
+      }
+    }
+  },
+  "notifications": {
+    "thecrohns": {
+      "Id": "e34579073dfb44a79c8358a9e8b4597d",
+      "ResourceName": "thecrohns",
+      "Name": "thecrohns-dev",
+      "service": "Pinpoint",
+      "output": {
+        "Id": "e34579073dfb44a79c8358a9e8b4597d",
+        "Name": "thecrohns-dev",
+        "Region": "ap-southeast-2",
+        "FCM": {
+          "ApplicationId": "e34579073dfb44a79c8358a9e8b4597d",
+          "CreationDate": "2023-07-09T04:29:25.232Z",
+          "Enabled": true,
+          "HasCredential": true,
+          "Id": "gcm",
+          "IsArchived": false,
+          "LastModifiedDate": "2023-07-09T04:29:25.232Z",
+          "Platform": "GCM",
+          "Version": 1
+        },
+        "regulatedResourceName": "thecrohns"
+      },
+      "lastPushTimeStamp": "2023-07-09T04:22:29.617Z"
+    }
+  },
+  "storage": {
+    "s3cfa2712e": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "S3",
+      "output": {
+        "BucketName": "thecrohns018c16753d65490eaf703424c087ef75181636-dev",
+        "Region": "ap-southeast-2"
+      },
+      "lastPushTimeStamp": "2023-07-15T18:41:55.306Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-thecrohns-dev-181636-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storages3cfa2712e"
+      }
+    }
+  }
+}

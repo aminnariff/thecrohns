@@ -1,0 +1,43 @@
+type Journal @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  foodName: String!
+  typeOfFood: String!
+  typeOfDiet: String!
+  mainIngredient: String!
+  sideEffect: String!
+  description: String!
+  dateOfEntry: AWSDateTime!
+  jImageUrl: String
+  jImageKey: String
+}
+
+type Task @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  description: String
+  isComplete: Boolean
+}
+
+type Fitness @model @auth(rules: [{allow: public, operations: [read]}]) {
+  id: ID!
+  title: String
+  tutorialLink: String
+  imgAssetUrl: String
+  imgAssetKey: String
+}
+
+type Learn @model @auth(rules: [{allow: public, operations: [read]}]) {
+  id: ID!
+  title: String
+  subtitle: String
+  learnLink: String
+}
+
+type New @model @auth(rules: [{allow: public, operations: [read]}]) {
+  id: ID!
+  title: String
+  subtiltle: String
+  description: String
+  newsLink: String
+}
+ 

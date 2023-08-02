@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>375829532366-5ekbe2n1d22nesoguencq74mp60f4t53.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.375829532366-5ekbe2n1d22nesoguencq74mp60f4t53</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDTImuVU2yxcC1cTEkySlotdKA3NMZPFOE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>375829532366</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.thecrohns</string>
+	<key>PROJECT_ID</key>
+	<string>thecrohns-2466d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>thecrohns-2466d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:375829532366:ios:c72702009e631fecd7ca9f</string>
+</dict>
+</plist>
